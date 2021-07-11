@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Select your option to operate to DB</title>
+<style>
+body{
+	background-image: url('background4.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100% ;
+	
+}	
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+
+footer{
+  padding: 30px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+</style>
+</head>
+
+
+<body>
+<header>
+<h1 style="color: black ; font-family: verdana">Select an option from below</h1><br>
+</header>
+
+
+<form method=get action=studentsOfAcademy>
+	<label style="color: black ; font-family: verdana">Get the list of student of Learner's Academy</label>
+	<button id="studentsOfAcademy" name="studentsOfAcademy">Go</button><br>
+</form>
+
+<form method=get action=teacherOfAcademy>
+	<label style="color: black ; font-family: verdana">Get the list of teachers of Learner's Academy</label>
+	<button>Go</button><br>
+</form>
+
+<form method=get action=subjectOfAcademy>
+	<label style="color: black ; font-family: verdana">Get the list of subjects taught in Learner's Academy</label>
+	<button>Go</button><br>
+</form>
+
+<form method=get action=filterStudentByClass>	
+	<label style="color: black ; font-family: verdana">Enter class ID to list down respective students (1-10): </label>
+	<input type="text" id="filterStudentByClass" name="filterStudentByClass"><button>Go</button><br>
+</form>
+
+<form method=get action=filterTeachersByClass>	
+	<label style="color: black ; font-family: verdana">Enter teacher ID to list down the respective classes taught by the teacher(1-10): </label>
+	<input type="text" id="filterTeachersByClass" name="filterTeachersByClass"><button>Go</button><br>
+</form>
+
+<form method=get action=filterSubjectsOptedByStudent>	
+	<label style="color: black ; font-family: verdana">Enter student ID to check the subjects opted by the student(1-14): </label>
+	<input type="text" id="filterSubjectsOptedByStudent" name="filterSubjectsOptedByStudent"><button>Go</button><br>
+</form>
+
+<form method=get action=logout>	
+	<button name="logout">Click here to logout</button><br>
+</form>
+
+</body>
+</html>

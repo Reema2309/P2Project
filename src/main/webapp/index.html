@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>Welcome to Learner’s Academy</title>
+<style>
+body{
+	background-image: url('background4.jpg');
+	filter: blur(100px);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100% ;
+	text-align: center;
+}	
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 10px;
+  color: black;
+}
+
+footer{
+  padding: 30px;
+  text-align: center;
+  font-size: 10px;
+  color: black;
+}
+</style>
+</head>
+
+
+<body>
+<header>
+<h1 style="color: black ; font-family: verdana">Sign In</h1><br>
+</header>
+
+<form method="get" action="loginValidate">
+  <label style="color: black ; font-family: verdana" for="user">Enter Username</label><br>
+  <input type="text" id="user" name="user"><br>
+  <label style="color: black ; font-family: verdana" for="password">Enter Password</label><br>
+  <input type="password" id="password" name="password"><br>
+  <button>Submit</button> 
+ </form>
+<footer>
+<h4 style="color: black ; font-family: verdana">Only admin access allowed</h4>
+</footer>
+<br>
+</body>
+</html>
